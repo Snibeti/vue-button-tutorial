@@ -1,15 +1,22 @@
 <template>
-<!-- TODO: Add component template -->
+<button @click="onClick" class="Button">
+  <slot>Button</slot>
+</button>
 </template>
 
 <script>
 export default {
-  // TODO: Add component prop
+  props: {
+    onClick: {
+      type: Function,
+      required: true
+    }
+  }
 }
 </script>
 
 <style lang="scss" scoped>
-$color: #b56969;
+$color: #de8585;
 .Button {
   background: $color;
   border: none;
@@ -17,6 +24,7 @@ $color: #b56969;
   cursor: pointer;
   font-size: 0.75rem;
   padding: 10px 25px;
+  margin: 0.5em;
   text-transform: uppercase;
   transition: background .2s ease-in-out;
 

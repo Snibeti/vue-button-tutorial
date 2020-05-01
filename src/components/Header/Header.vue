@@ -1,7 +1,7 @@
 <template>
 <div class="Header">
-  <h1>Button Component</h1>
-  <p>Creating a reusable button component with Vue.js</p>
+  <h1>An Awful Portfolio</h1>
+  <p>I mean really, you couldn't come up with a more realistic fake site?</p>
 </div>
 </template>
 
